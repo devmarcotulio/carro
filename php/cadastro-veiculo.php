@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <h1>Cadastro de veículos</h1>
     <form action="validacao-cadastro-veiculo.php" method="POST">
         <label for="marca">Digite a marca do veículo</label>
         <input type="text" name="marca" required /><br><br>

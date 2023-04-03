@@ -29,15 +29,13 @@
 
 <body>
     <main>
-        <section class="content">
-            <form action="validacao-login.php" method="POST">
-                <input type="email" name="email" placeholder="Email" required /><br><br>
-                <input type="password" name="senha" placeholder="Senha" required /><br><br>
-                <input type="submit" value="Entrar" /><br><br><br>
-            </form>
-            <a href="cadastro.php"> Cadastrar </a><br><br>
-        </section>
-        <section class="image"></section>
+        <h1>Login</h1>
+        <form action="validacao-login.php" method="POST">
+            <input type="email" name="email" placeholder="Email" required /><br><br>
+            <input type="password" name="senha" placeholder="Senha" required /><br><br>
+            <input type="submit" value="Entrar" /><br><br><br>
+        </form>
+        <a href="cadastro.php"> Cadastrar </a><br><br>
         <div class="erro">
             <?php
             if (isset($_GET["acao"]) && $_GET["acao"] == 2) {

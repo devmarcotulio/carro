@@ -19,8 +19,9 @@
 </head>
 
 <body>
-    <br><br>
-    <a href="cadastro-veiculo.php"> Cadastrar novo veiculo </a><br><br>
+    <h1>Visualizar veículos</h1>
+    <br>
+    <a href="cadastro-veiculo.php"> Cadastrar novo veiculo </a><br><br><br>
     <div>
         <?php
         session_start();

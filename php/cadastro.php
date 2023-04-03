@@ -21,15 +21,14 @@
 
 <body>
     <main>
-        <section class="content">
-            <form action="validacao-cadastro.php" method="POST">
-                <input type="text" name="nome" placeholder="Nome" required /><br><br>
-                <input type="email" name="email" placeholder="Email" required /><br><br>
-                <input type="password" name="senha" placeholder="Senha" required /><br><br>
+        <h1>Cadastro</h1>
+        <form action="validacao-cadastro.php" method="POST">
+            <input type="text" name="nome" placeholder="Nome" required /><br><br>
+            <input type="email" name="email" placeholder="Email" required /><br><br>
+            <input type="password" name="senha" placeholder="Senha" required /><br><br>
 
-                <input type="submit" value="Cadastrar" /><br><br><br>
-            </form>
-        </section>
+            <input type="submit" value="Cadastrar" /><br><br><br>
+        </form>
         <div class="erro">
             <?php
             if (isset($_GET["acao"]) && $_GET["acao"] == 1) {
