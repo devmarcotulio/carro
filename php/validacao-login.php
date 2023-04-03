@@ -20,7 +20,7 @@ while ($cont < sizeof($_SESSION["usuario"]) && $parar == false) {
 
 if ($parar == false) {
     $_SESSION['usuario'][] = $arr;
-    header("Location: index.php?acao=1");
+    header("Location: index.php?acao=2");
 } else {
     header("Location: cadastro-veiculo.php");
 }
