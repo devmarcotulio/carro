@@ -6,25 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .erro {
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
     <main>
         <section class="content">
             <form action="validacao-cadastro.php" method="POST">
-                <label for="email">Digite o nome</label>
-                <input type="text" name="nome" required />
+                <input type="text" name="nome" placeholder="Nome" required /><br><br>
+                <input type="email" name="email" placeholder="Email" required /><br><br>
+                <input type="password" name="senha" placeholder="Senha" required /><br><br>
 
-                <label for="email">Digite o seu email</label>
-                <input type="email" name="email" placeholder="seuemail@gmail.com" required />
-
-                <label for="password">Digite o sua senha</label>
-                <input type="password" name="senha" required />
-
-                <input type="submit" value="Cadastrar" />
+                <input type="submit" value="Cadastrar" /><br><br><br>
             </form>
         </section>
-        <div>
+        <div class="erro">
             <?php
             if (isset($_GET["acao"]) && $_GET["acao"] == 1) {
                 echo "Já existe esse email cadastrado!";
